@@ -3,8 +3,8 @@
 ## Exercise 01
 Write an Express application to provide a calculator API. 
 * There should be an API endpoint for each basic math operation: `addition`, `subtraction`, `multiplication`, `division`, and `modulus`. 
-* Each endpoint will receive the input numbers and return a JSON response with single number as follows: `{ results: 0 }`. 
-* The calculator router should be designed with flexibility to receive the imput numbers as query parameters, parameters, or in the body as JSON or urlEncoded format, For example, all of these requests will return the value `{ results: 5 }`:
+* Each endpoint will receive the input numbers and return a JSON response with the results as follows: `{ results: 0 }`. 
+* The calculator router should be designed with flexibility to receive the input numbers as query parameters, parameters, or in the body as JSON or urlEncoded format, For example, all of these requests will return the same results value `{ results: 5 }`:
   * `GET /addition/2/3`
   * `GET /addition/?a=2&b=3`
   * `POST /addition/` BODY `?a=2&b=3`
