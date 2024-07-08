@@ -9,7 +9,8 @@ Write an Express application to provide a calculator API.
   * `GET /addition/?a=2&b=3`
   * `POST /addition/` BODY `?a=2&b=3`
   * `POST /addition/` BODY `{a:2,b:3}`
-* Use [morgan](https://www.npmjs.com/package/morgan) and save a log of all requests to a file `access.log`.
+* Use [morgan](https://www.npmjs.com/package/morgan) and print a log of all incoming requests to the console.
+* Use [cors](https://www.npmjs.com/package/cors) and allow cross-origin requests to be shared.
   
 ## Exercise 02
 This application reads/writes the state from/to [node-localstorage](https://www.npmjs.com/package/node-localstorage) which is used as a form of DB storage. Create the following API end points as follows:
