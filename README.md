@@ -9,9 +9,10 @@ Write an Express application to provide a calculator API.
   * `GET /addition/?a=2&b=3`
   * `POST /addition/` BODY `?a=2&b=3`
   * `POST /addition/` BODY `{a:2,b:3}`
-
+* Use [morgan](https://www.npmjs.com/package/morgan) and save a log of all requests to a file `access.log`.
+  
 ## Exercise 02
-Create the following API end points as follows:
+This application reads/writes the state from/to [node-localstorage](https://www.npmjs.com/package/node-localstorage) which is used as a form of DB storage. Create the following API end points as follows:
 * `POST /numbers/:n` for saving a input number, return the all saved numbers as a JSON. For example
   * `POST /numbers/1` -> `{ results: [1] }`
   * `POST /numbers/2` -> `{ results: [1,2] }`
