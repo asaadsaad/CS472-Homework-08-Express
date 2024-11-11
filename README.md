@@ -23,8 +23,8 @@ This application reads/writes the state from/to [node-localstorage](https://www.
   * `GET /numbers/0` -> `{ results: 1 }`
   * `GET /numbers/1` -> `{ results: 2 }`
   * `GET /numbers/2` -> `{ results: 5 }`
-* `DELETE /numbers/:n`, remove the number in the array
-  * `DELETE /numbers/1` -> `{ results: [2,5] }`
-  * `DELETE /numbers/2` → `{ results: [5] }`
-* `PUT /numbers/:index/:newvalue`, change the number in the array
+* `DELETE /numbers/:index`, remove the number from the array at the specified index
+  * `DELETE /numbers/1` -> `{ results: [1,5] }`
+  * `DELETE /numbers/0` → `{ results: [5] }`
+* `PUT /numbers/:index/:n`, change the number value in the array at the specified value
   * `PUT /numbers/0/10` -> `{ results: [10] }`
