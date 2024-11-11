@@ -26,5 +26,5 @@ This application reads/writes the state from/to [node-localstorage](https://www.
 * `DELETE /numbers/:n`, remove the number in the array
   * `DELETE /numbers/1` -> `{ results: [2,5] }`
   * `DELETE /numbers/2` → `{ results: [5] }`
-* `PUT /numbers/:n1/:n2`, change the number in the array
-  * `PUT /numbers/5/10` -> `{ results: [10] }`
+* `PUT /numbers/:index/:newvalue`, change the number in the array
+  * `PUT /numbers/0/10` -> `{ results: [10] }`
