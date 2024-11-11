@@ -13,7 +13,7 @@ Write an Express application to provide a calculator API.
 * Use [cors](https://www.npmjs.com/package/cors) and allow cross-origin requests to be shared.
   
 ## Exercise 02
-This application reads/writes the state from/to [node-localstorage](https://www.npmjs.com/package/node-localstorage) which is used as a form of data storage. The application state is an array of numbers `const state: number[] = []`. Create the following API end points as follows:
+This application reads/writes the state from/to [node-localstorage](https://www.npmjs.com/package/node-localstorage) which is used as a form of data storage. The application state is an array of numbers `number[]`. Create the following API end points as follows:
 * `POST /numbers/:n` for adding an input number, return all saved numbers as a JSON. For example
   * `POST /numbers/1` -> `{ results: [1] }`
   * `POST /numbers/2` -> `{ results: [1,2] }`
